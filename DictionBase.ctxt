@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=DictionBase
+comment1.params=
+comment1.target=DictionBase()
+comment2.params=
+comment2.target=int\ getCount()
+comment3.params=key1
+comment3.target=java.lang.String\ getKey(int)
+comment4.params=key1
+comment4.target=java.lang.String\ getVal(int)
+comment5.params=eng
+comment5.target=java.lang.String\ translate(java.lang.String)
+numComments=6
