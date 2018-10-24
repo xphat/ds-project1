@@ -20,9 +20,12 @@ public class DictionSeq extends DictionBase
      while((ndx< this.getCount()) && (found==0))
      {
          TimeUnit.NANOSECONDS.sleep(1);
-         //need to complete code here
-         //to implement search
-         //
+         if (dictionArr[ndx][0] == eng)
+         {
+             returnval = dictionArr[ndx][1];
+             found = 1;
+         }
+         ndx++;
         }
       
       return returnval;

@@ -44,8 +44,7 @@ import java.util.StringTokenizer;
                        dictNdx++;
                     }
                 
-               System.out.println(":::::::::::Dictionary initialized with "+ getCount()+" entries:::::::::::::::");
-              
+               System.out.println(":::::::::::Dictionary initialized with "+ getCount()+" entries:::::::::::::::");             
                 
     }
 
@@ -56,7 +55,8 @@ import java.util.StringTokenizer;
    {
         //update code to return count: 
 	  //Hint - This function should return the number of entries in the dictionary array
-         return 0;
+         return dictionArr.length;
+	  //return 0;
     }
      public String getKey(int key1)
    {   return dictionArr[key1][0];
@@ -65,8 +65,8 @@ import java.util.StringTokenizer;
   public String getVal(int key1)
    { //
        //return "update code to return value";
-	  //Hint : return the value associated with the key in the dictionary
-       return "";
+       //Hint : return the value associated with the key in the dictionary
+       return dictionArr[key1][1];
     }
    
        public abstract String  translate(String eng) throws Exception;
