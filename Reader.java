@@ -21,15 +21,15 @@ class Reader  {
     {
         //UNCOMMENT APPROPRIATE LINE    
         //dict = new DictionSeq();
-          dict = new DictionBin();
+        dict = new DictionBin();
         System.setProperty("mbrola.base", ".\\mbrola");
         listAllVoices();
         initComplete = true;
         u.btnTranslate.setEnabled(true);
         u.btnSelectData.setEnabled(true);
         //you can remove the lines below after completing the  ADT
-       System.out.println("You need to complete the ADT before doing translations");
-        say("You need to complete the A.D.T.before doing translations");
+       //System.out.println("You need to complete the ADT before doing translations");
+        //say("You need to complete the A.D.T.before doing translations");
    
     }
 

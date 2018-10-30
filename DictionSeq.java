@@ -15,12 +15,13 @@ public class DictionSeq extends DictionBase
 
 
    private String translateS (String eng) throws Exception
-    {int ndx = 0, found =0;
+    {
+        int ndx = 0, found = 0;
      String returnval = "No comprehendo";
-     while((ndx< this.getCount()) && (found==0))
+     while((ndx < this.getCount()) && (found==0))
      {
          TimeUnit.NANOSECONDS.sleep(1);
-         if (dictionArr[ndx][0] == eng)
+         if (dictionArr[ndx][0].compareToIgnoreCase(eng) == 0)
          {
              returnval = dictionArr[ndx][1];
              found = 1;
