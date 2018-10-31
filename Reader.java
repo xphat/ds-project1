@@ -13,15 +13,15 @@ import java.util.concurrent.*;
 
 class Reader  {
     //UNCOMMENT APPROPRIATE LINE    
-    //static DictionSeq dict;
-    static DictionBin dict;
+    static DictionSeq dict;
+    //static DictionBin dict;
     private boolean initComplete = false;
 
     public Reader(UI u) throws Exception
     {
         //UNCOMMENT APPROPRIATE LINE    
-        //dict = new DictionSeq();
-        dict = new DictionBin();
+        dict = new DictionSeq();
+        //dict = new DictionBin();
         System.setProperty("mbrola.base", ".\\mbrola");
         listAllVoices();
         initComplete = true;
