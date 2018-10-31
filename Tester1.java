@@ -7,7 +7,7 @@
  */
 public class Tester1
 {
-    public int countSymbols (BinaryTree x)
+    public static int countSymbols (BinaryTree x)
     {
         if (x.emptyTree())
         {
@@ -23,13 +23,13 @@ public class Tester1
         }
     }
     
-    public int countLeaves (BinaryTree x)
+    public static int countLeaves (BinaryTree x)
     {
         if (x.emptyTree())
         {
             return 0;
         }
-        else if (x.getLeft() == null && x.getRight() == null)
+        else if (x.getLeft().getSize() == 0 && x.getRight().getSize() == 0)
         {
             return countLeaves(x.getLeft()) + countLeaves(x.getRight()) + 1;
         }
@@ -39,17 +39,27 @@ public class Tester1
         }
     }
     
-    public String postOrder (BinaryTree x)
+    public static String postOrder (BinaryTree x)
     {
-        return "";
+        if (x.emptyTree())
+        {
+            return "";
+        }
+ 
+        return postOrder(x.getLeft()) + postOrder(x.getRight()) + " " + x.getRoot();
     }
     
-    public String inOrder (BinaryTree x)
+    public static String inOrder (BinaryTree x)
     {
-        return "";
+        if (x.emptyTree())
+        {
+            return "";
+        }
+ 
+        return inOrder(x.getLeft()) + " " + x.getRoot() + inOrder(x.getRight());
     }
     
-    private boolean isSymbol (char x)
+    private static boolean isSymbol (char x)
     {
         if (x == '+' || x == '-' || x == '/' || x == '*' || x == '^')
         {
@@ -64,18 +74,29 @@ public class Tester1
     public static void main()
     {
         BinaryTree bt = new BinaryTree(new Node('+'));
+        
         bt.insertNode('/', 0);
         bt.insertNode('*', 1);
-        bt.getLeft().insertNode('*', 0);
-        bt.getLeft().insertNode('-',1);
+        BinaryTree lsub = bt.getLeft();
         
-        //This needs to be fixed!  --- Creates Tree But the Node Structure isnt Correct Yet!
-        
-        bt.getRight().insertNode('5', 0);
-        bt.getRight().insertNode('-',1);
-        
-        
+        lsub.insertNode('*', 0);
+        lsub.insertNode('-', 1);
+        BinaryTree lsubsub = lsub.getLeft();
+        lsubsub.insertNode('2', 0);
+        lsubsub.insertNode('3', 1);
+        BinaryTree lsubsubr = lsub.getRight();
+        lsubsubr.insertNode('2', 0);
+        lsubsubr.insertNode('1', 1);        
+        BinaryTree rsub = bt.getRight();
+        rsub.insertNode('5', 0);
+        rsub.insertNode('-', 1);
+        BinaryTree rsubsub = rsub.getRight();
+        rsubsub.insertNode('4', 0);
+        rsubsub.insertNode('1', 1);
+                     
         System.out.println(bt);
+        
+             
                        
     }
     
