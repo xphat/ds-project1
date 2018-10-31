@@ -3,7 +3,7 @@
  * Write a description of class BST here.
  *
  * @author (Rhon-Kaniel Bramwell 01-021276)
- * @version (0.001)
+ * @version (30102018)
  */
 public class BST extends BinaryTree
 {
@@ -13,25 +13,32 @@ public class BST extends BinaryTree
      * @param  y  a sample parameter for a method
      * @return    the sum of x and y
      */
-    public int largestKey(BinaryTree x)
+    public int largestKey()
     {
         // put your code here
         return 0;
     }
     
-    public int smallestKey(BinaryTree x)
+    public int smallestKey()
     {
         // put your code here
         return 0;
     }
     
-    public BinaryTree searchTree(BinaryTree x, char sdata)
+    public BinaryTree searchTree(char sdata)
     {
         return null;
     }
     
-    
-    
+    public void insertKey(char value)
+    {
+        //
+    }
+        
+    public void deleteKey(char value)
+    {
+        //        
+    }
     
     
 }

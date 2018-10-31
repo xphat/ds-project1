@@ -1,11 +1,15 @@
 #BlueJ class context
 comment0.target=BST
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ BST\ here.\r\n\r\n\ @author\ (Rhon-Kaniel\ Bramwell\ 01-021276)\r\n\ @version\ (0.001)\r\n
-comment1.params=x
-comment1.target=int\ largestKey(BinaryTree)
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ BST\ here.\r\n\r\n\ @author\ (Rhon-Kaniel\ Bramwell\ 01-021276)\r\n\ @version\ (30102018)\r\n
+comment1.params=
+comment1.target=int\ largestKey()
 comment1.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\r\n\ @param\ \ y\ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ the\ sum\ of\ x\ and\ y\r\n
-comment2.params=x
-comment2.target=int\ smallestKey(BinaryTree)
-comment3.params=x\ sdata
-comment3.target=BinaryTree\ searchTree(BinaryTree,\ char)
-numComments=4
+comment2.params=
+comment2.target=int\ smallestKey()
+comment3.params=sdata
+comment3.target=BinaryTree\ searchTree(char)
+comment4.params=value
+comment4.target=void\ insertKey(char)
+comment5.params=value
+comment5.target=void\ deleteKey(char)
+numComments=6
