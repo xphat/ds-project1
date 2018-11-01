@@ -3,6 +3,7 @@
  * Write a description of class BST here.
  *
  * @author (Rhon-Kaniel Bramwell 01-021276)
+ * @author (Kelvin Hayles 620079267)
  * @version (30102018)
  */
 public class BST extends BinaryTree
@@ -15,14 +16,22 @@ public class BST extends BinaryTree
      */
     public int largestKey()
     {
-        // put your code here
-        return 0;
+        
+        if (emptyTree())
+            return 0; 
+        
+        
+        return (getRight().getRoot());
+        
     }
     
     public int smallestKey()
     {
-        // put your code here
+        if (emptyTree())
+        
         return 0;
+        
+        return (getLeft().getRoot());
     }
     
     public BinaryTree searchTree(char sdata)

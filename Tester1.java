@@ -3,6 +3,7 @@
  * Write a description of class Tester1 here.
  *
  * @author (Rhon-Kaniel Bramwell)
+ * @author (Kelvin Hayles)
  * @version (0.001)
  */
 public class Tester1
