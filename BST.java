@@ -36,7 +36,21 @@ public class BST extends BinaryTree
     
     public BinaryTree searchTree(char sdata)
     {
-        return null;
+        
+        if(!emptyTree()){
+            if(getLeft().getRoot()>sdata){
+            sdata = getLeft().getRoot();
+            }
+        else{
+            sdata= getRight().getRoot();
+        }
+        
+        if (emptyTree())
+        return null;   
+         
+        }
+        
+        return searchTree(sdata);
     }
     
     public void insertKey(char value)
